@@ -1,6 +1,4 @@
-# AuthService
-
-Este repositorio contiene una implementación sencilla de un servicio de autenticación y autorización basado solamente en ASP.NET Core Identity. La necesidad surge del proyecto de Remesas 2.0 y de no tener que reimplementar lógica de oauth2 en cada nuevo servicio.
+# ExerciseN1
 
 ## Endpoints
 
@@ -38,20 +36,3 @@ Obtener una lista de los roles de un "usuario" en el sistema. Se necesita un api
 POST /api/role
 ```
 Crear nuevo rol. Se necesita un api key.
-
-```
-GET /api/application
-```
-Devuelve una lista de aplicaciones registradas en el servicio. Se necesita un api key.
-
-```
-GET /api/application/{name}
-```
-Devuelve un modelo con los datos de configuración de la aplicación registrada con nombre "name". Se necesita un api key.
-
-```
-POST /api/application
-```
-Sirve para registrar una aplicación y su configuración de duración de token y refreshToken
-
-
