@@ -1,5 +1,37 @@
 # ExerciseN1
 
+## database
+
+build the docker image
+
+```
+docker build -t sqlserver -f DatabaseDockerfile .
+```
+
+run the database docker image
+
+```
+docker run -d -p 1433:1433 sqlserver
+```
+
+apply migrations to database. From root directory in the repo:
+
+```
+dotnet ef database update -- --environment Local
+```
+
+## main program
+
+create api keys using a database management program (I used Dbeaver on linux)
+
+configure environment api key in postman
+
+create roles using the roles endpoint
+
+register a user using te register endpoint
+
+test the login and verify jwt endpoints
+
 ## Endpoints
 
 ```
