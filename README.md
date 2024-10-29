@@ -1,5 +1,7 @@
 # ExerciseN1
 
+Simple Authentication and Authorization using jwts through Microsofts "Identity".
+
 ## database
 
 build the docker image
